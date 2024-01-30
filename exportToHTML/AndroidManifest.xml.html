@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>AndroidManifest.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #ffffff;}
+.s2 { color: #54b33e;}
+.s3 { color: #ebebeb;}
+.s4 { color: #7ec3e6;}
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AndroidManifest.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;manifest </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;uses-permission </span><span class="s1">android:name</span><span class="s2">=&quot;android.permission.INTERNET&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;uses-permission </span><span class="s1">android:name</span><span class="s2">=&quot;andrid.permission.RECORD_AUDIO&quot;</span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;application</span>
+        <span class="s1">android:name  </span><span class="s2">= &quot;${voice}&quot;</span>
+        <span class="s1">android:label </span><span class="s2">= &quot;speech_to_text_app&quot;</span>
+        <span class="s1">android:icon  </span><span class="s2">= &quot;@mipmap/ic_launcher&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;activity</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;.MainActivity&quot;</span>
+            <span class="s1">android:exported</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:launchMode</span><span class="s2">=&quot;singleTop&quot;</span>
+            <span class="s1">android:theme</span><span class="s2">=&quot;@style/LaunchTheme&quot;</span>
+            <span class="s1">android:configChanges</span><span class="s2">=&quot;orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode&quot;</span>
+            <span class="s1">android:hardwareAccelerated</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:windowSoftInputMode</span><span class="s2">=&quot;adjustResize&quot;</span><span class="s0">&gt;</span>
+            <span class="s4">&lt;!-- Specifies an Android theme to apply to this Activity as soon as 
+                 the Android process has started. This theme is visible to the user 
+                 while the Flutter UI initializes. After that, this theme continues 
+                 to determine the Window background behind the Flutter UI. --&gt;</span>
+            <span class="s0">&lt;meta-data</span>
+              <span class="s1">android:name</span><span class="s2">=&quot;io.flutter.embedding.android.NormalTheme&quot;</span>
+              <span class="s1">android:resource</span><span class="s2">=&quot;@style/NormalTheme&quot;</span>
+              <span class="s0">/&gt;</span>
+            <span class="s0">&lt;intent-filter&gt;</span>
+                <span class="s0">&lt;action </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.action.MAIN&quot;</span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;category </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.category.LAUNCHER&quot;</span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/intent-filter&gt;</span>
+        <span class="s0">&lt;/activity&gt;</span>
+        <span class="s4">&lt;!-- Don't delete the meta-data below. 
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java --&gt;</span>
+        <span class="s0">&lt;meta-data</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;flutterEmbedding&quot;</span>
+            <span class="s1">android:value</span><span class="s2">=&quot;2&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;/application&gt;</span>
+<span class="s0">&lt;/manifest&gt;</span>
+</pre>
+</body>
+</html>
